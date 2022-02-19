@@ -1,0 +1,408 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+/* Обнулили, приступаем-------------------*/
+.background {
+	margin: 0 0 0 10%;
+	width: 80%;
+	height: 100%;
+}
+
+.header_nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	border-bottom: 3px solid black;
+	position: sticky;
+}
+.nav_menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+}
+.nav_menu a {
+	transition: color 0.5s ease;
+}
+.nav_menu:hover a {
+	color: rgb(15, 105, 240);
+}
+.nav_menu a {
+	color: black;
+	font-size: 16px;
+}
+
+.head_burger {
+	display: none;
+}
+
+/*Header end*/
+
+.intro {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 130px;
+}
+.language {
+	transform: rotate(270deg);
+}
+.photo_me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+}
+.photo_me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 50px;
+}
+.hidden_photo {
+	width: 0px;
+	height: 0px;
+}
+.hidden_photo img {
+	width: 0;
+}
+.t-34 {
+	width: 80%;
+}
+/* 1st page end*/
+
+.aboutMe {
+	width: 80%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 0 10%;
+}
+.aboutMe div {
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	width: 70%;
+	text-align: center;
+}
+.aboutMe p + p {
+	margin-bottom: 30px;
+}
+.fz {
+	padding-bottom: 24px;
+	font-size: 14px;
+}
+.aboutMe div:first-child {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h2 {
+	font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 40px;
+	padding-left: 30%;
+	padding-top: 30px;
+}
+h3 {
+	font-size: 17px;
+	padding-bottom: 30px;
+}
+
+.tehnologies {
+	display: flex;
+	justify-content: space-evenly;
+	width: 700px;
+	padding-bottom: 40px;
+}
+.content {
+	width: 100px;
+}
+.logo_skil {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.logo_skil div {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.react {
+	width: 88%;
+}
+
+.page_photo1 {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.cla2 {
+	flex: 0 0 100px;
+	overflow: hidden;
+	border-radius: 50%;
+	width: 100px;
+}
+.cla2 img {
+	max-width: 100%;
+}
+.title_portfolio {
+	font-size: 20px;
+	padding-top: 100px;
+	font-size: 30px;
+}
+.photos {
+	padding-bottom: 30px;
+	background-color: rgba(128, 128, 128, 0.068);
+}
+.photos div {
+	text-align: center;
+}
+.photos div + div {
+	margin-bottom: 30px;
+}
+.photos a:hover {
+	border-bottom: 2px solid blue;
+}
+.photos a {
+	margin-bottom: 20px;
+}
+.page_photo1 .page_photo2 .page_photo3 {
+	text-align: center;
+}
+/*Photos content end*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+footer > div {
+	width: 40%;
+	text-align: center;
+	font-size: 17px;
+	margin: 20px;
+}
+.cont_button,
+.icons_text {
+	padding: 10px;
+	margin: 10px 10px 10px 10px;
+}
+.cont_button div,
+.icons_text div {
+	padding: 4px;
+}
+button {
+	background: transparent;
+	padding: 5px;
+	color: white;
+	background-color: black;
+	border-radius: 26px;
+	width: 130px;
+	height: 35px;
+	font-size: 18px;
+	margin-top: 20px;
+	border: 3px solid rgb(224, 156, 29);
+}
+button:hover {
+	background: linear-gradient(
+		to bottom,
+		#aebcbf 20%,
+		#6e7774 39%,
+		#0a0809 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+	color: orange;
+}
+button:active {
+	background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+.icons div {
+	padding: 8px;
+	margin: 3px;
+	color: black;
+	transition: color 0.5s ease, transform 0.8s ease;
+	transform: scale(1);
+	transform: rotate(0deg); /*Как сделать чтобы одновременно scale и rotate отрабатывали при наведении? */
+}
+
+.icons div:hover {
+	color: blue;
+	transform: scale(2);
+	transform: rotate(360deg);
+}
+@media (max-width: 800px) {
+	body {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 700px;
+		padding-top: 70px;
+		margin-left: 3px;
+	}
+	.header_nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+	.photo_me {
+		width: 0;
+		height: 0;
+	}
+	.photo_me img {
+		width: 0;
+	}
+	.hidden_photo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 480px;
+		height: 650px;
+	}
+	.hidden_photo img {
+		width: 400px;
+	}
+
+	.head_burger {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 20px;
+		z-index: 6;
+		top: 60px;
+		right: 200px;
+	}
+	.head_burger:before,
+	.head_burger:after {
+		content: "";
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+	.head_burger:before {
+		top: 0;
+	}
+	.head_burger::after {
+		bottom: 0;
+	}
+	.head_burger span {
+		position: absolute;
+		background-color: black;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		left: 0;
+	}
+	.header_nav {
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
+		align-content: space-between;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+	.tehnologies {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.photos img {
+		width: 500px;
+	}
+}
